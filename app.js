@@ -8,7 +8,7 @@ var db = require('./db')
 const productsModel = require('./models/products.model')
 app.use(express.static('./methods-public'))
 app.get('/',(req,res)=>{
-    res.json(products);
+    res.json({"status":200});
 })
 //parse for data
 app.use(express.urlencoded({extended:false}))
